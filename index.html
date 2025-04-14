@@ -57,17 +57,59 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="bg-green-50 py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-12">Our Work</h3>
-      <div class="grid gap-6 md:grid-cols-3">
-        <img src="project/project1.png" alt="Project 1" class="rounded-xl shadow" />
-        <img src="project/project2.png" alt="Project 2" class="rounded-xl shadow" />
-        <img src="https://via.placeholder.com/300x200" class="rounded-lg shadow" alt="Project 3" />
-      </div>
+<section id="portfolio" class="bg-green-50 py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-12">Our Work</h3>
+    <div class="grid gap-6 md:grid-cols-3">
+      <a href="https://rohanharnal.com/" target="_blank" class="tilt-card">
+        <img src="project/project1.png" alt="Project 1" class="rounded-lg shadow" />
+      </a>
+      <a href="https://spiritanimal.in/" target="_blank" class="tilt-card">
+        <img src="project/project2.png" alt="Project 2" class="rounded-lg shadow" />
+      </a>
+      <a href="https://example.com/project3" target="_blank" class="tilt-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 3" class="rounded-lg shadow" />
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- Tilt Effect Script and Style -->
+<style>
+  .tilt-card {
+    display: inline-block;
+    perspective: 1000px;
+  }
+  .tilt-card img {
+    transition: transform 0.3s ease;
+    transform: rotateX(4deg) rotateY(-4deg);
+  }
+</style>
+<script>
+  document.querySelectorAll('.tilt-card').forEach(card => {
+    const img = card.querySelector('img');
+
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const deltaX = (x - centerX) / centerX;
+      const deltaY = (y - centerY) / centerY;
+
+      img.style.transform = `rotateX(${deltaY * -10 + 4}deg) rotateY(${deltaX * 10 - 4}deg)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      img.style.transform = 'rotateX(4deg) rotateY(-4deg)';
+    });
+  });
+</script>
+
+
+
+  
   <!-- Pricing Section -->
   <section id="pricing" class="max-w-7xl mx-auto px-4 py-16">
     <h3 class="text-3xl font-bold text-center mb-12">Pricing Packages</h3>
