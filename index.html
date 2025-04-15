@@ -23,7 +23,7 @@
   <!-- Header -->
   <header class="bg-green-500 text-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Creative Web Solutions</h1>
+      <h1 class="text-2xl font-bold">KsWeb Solutions</h1>
       <nav class="space-x-4 text-sm md:text-base">
         <a href="#services" class="hover:underline">Services</a>
         <a href="#pricing" class="hover:underline">Pricing</a>
@@ -33,14 +33,23 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-green-50 py-20 text-center px-4">
-    <h2 class="text-4xl font-bold mb-4">Bring Your Website to Life</h2>
+<!-- Hero Section with Background Video -->
+<section class="relative w-full h-[600px] overflow-hidden bg-green-50 text-center px-4 flex items-center justify-center">
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="media/avx.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay & Content -->
+  <div class="relative z-10 bg-white/70 backdrop-blur-md p-6 rounded-xl">
+    <h2 class="text-4xl font-bold mb-4">Bring Your Business to the World Wide Web</h2>
     <p class="max-w-xl mx-auto text-lg mb-6">Professional, affordable, and scalable website development packages tailored to your business.</p>
     <a href="#contact" class="bg-green-600 text-white px-6 py-3 rounded-full shadow hover:bg-green-700 transition">Get Started</a>
-  </section>
+  </div>
+</section>
 
-  <!-- Services Section -->
+  <!-- Our Services Section -->
   <section id="services" class="max-w-7xl mx-auto px-4 py-16">
     <h3 class="text-3xl font-bold text-center mb-12">Our Services</h3>
     <div class="grid gap-8 md:grid-cols-3">
@@ -127,7 +136,7 @@
       </div>
       <div class="border rounded-xl p-6 hover-expand bg-green-100">
         <h4 class="text-xl font-bold mb-2">Business Pro</h4>
-        <p class="text-green-700 text-2xl font-semibold mb-4">₹60,000+</p>
+        <p class="text-green-700 text-2xl font-semibold mb-4">₹40,000+</p>
         <ul class="text-sm space-y-1">
           <li>✓ Up to 15 pages</li>
           <li>✓ Advanced Design & Animations</li>
@@ -137,7 +146,7 @@
       </div>
       <div class="border rounded-xl p-6 hover-expand bg-green-100">
         <h4 class="text-xl font-bold mb-2">Enterprise</h4>
-        <p class="text-green-700 text-2xl font-semibold mb-4">₹90,000+</p>
+        <p class="text-green-700 text-2xl font-semibold mb-4">₹70,000+</p>
         <ul class="text-sm space-y-1">
           <li>✓ eCommerce & SaaS Ready</li>
           <li>✓ CMS + Payment Integration</li>
