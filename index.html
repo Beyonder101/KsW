@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kamisama Web offers innovative digital solutions, smart web tools, and creative projects to empower your online presence.
-    Explore limitless possibilities." />
   <title>Creative Web Solutions</title>
-  <link rel="icon" href="favicon.png" type="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      transition: background 0.5s ease;
+    }
+    .content {
+      display: none;
+      min-height: 100vh; /* ensures same page height */
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body id="pageBody" class="bg-white text-gray-800">
+
+
+                                                                <!-- PAGE 1  -->
+  <!-- Website Services -->
+  <div id="webContent" class="content active">
+    <header class="bg-green-500 text-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">KsWeb Solutions</h1>
+        <nav class="space-x-4 text-sm md:text-base">
+          <button onclick="swapPage()" class="hover:underline focus:outline-none">Management Serv</button>
+          <a href="#services" class="hover:underline">Services</a>
+          <a href="#pricing" class="hover:underline">Pricing</a>
+          <a href="#portfolio" class="hover:underline">Portfolio</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
 
 
 <!--- logo for google to reconize --->
@@ -21,10 +56,6 @@
       "description": "For all your needs, THE BEST and THE CHEAPEST online presence maker platform is available"
     }
   </script>
-
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .hover-expand {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -34,20 +65,6 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
   </style>
-</head>
-<body class="bg-white text-gray-800 font-[Inter]">
-  <!-- Header -->
-  <header class="bg-green-500 text-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">KsWeb Solutions</h1>
-      <nav class="space-x-4 text-sm md:text-base">
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#pricing" class="hover:underline">Pricing</a>
-        <a href="#portfolio" class="hover:underline">Portfolio</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
 
 <!-- Hero Section with Background Video -->
 <section class="relative w-full h-[600px] overflow-hidden bg-green-50 text-center px-4 flex items-center justify-center">
@@ -173,24 +190,209 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-green-600 text-white py-16">
-    <div class="max-w-2xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-4">Let’s Build Something Great</h3>
-      <p class="mb-6">Ready to bring your website vision to life? Let's talk and start your journey online.</p>
-      <a href="mailto:info@websolutions.com" class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">Contact Us</a>
-      <div class="mt-6">
-        <a href="https://wa.me/919599725768" target="_blank" class="inline-flex items-center bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" class="w-6 h-6 mr-2" alt="WhatsApp Logo"/>
-          Chat on WhatsApp
-        </a>
+
+    <section id="contact" class="bg-green-600 text-white py-16">
+      <div class="max-w-2xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-bold mb-4">Let’s Build Something Great</h3>
+        <p class="mb-6">Ready to bring your website vision to life? Let's talk and start your journey online.</p>
+        <a href="mailto:info@websolutions.com" class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">Contact Us</a>
+        <div class="mt-6">
+          <a href="https://wa.me/919599725768" target="_blank" class="inline-flex items-center bg-white text-green-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" class="w-6 h-6 mr-2"/>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-sm text-gray-500 py-4">
+      &copy; 2025 Creative Web Solutions. All rights reserved.
+    </footer>
+  </div>
+  
+  
+  
+  
+                                                            <!-- PAGE 2  -->
+  <!-- Management Services -->
+  <div id="pmContent" class="content">
+    <header class="bg-blue-400 text-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">KsWeb Management</h1>
+        <nav class="space-x-4 text-sm md:text-base">
+          <button onclick="swapPage()" class="hover:underline focus:outline-none">Website Serv</button>
+          <a href="#services" class="hover:underline">Services</a>
+          <a href="#pricing" class="hover:underline">Pricing</a>
+          <a href="#portfolio" class="hover:underline">Portfolio</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+
+<!-- Hero Section with Background Video -->
+<section class="relative w-full h-[600px] overflow-hidden bg-blue-400 text-center px-4 flex items-center justify-center">
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="media/avx.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay & Content -->
+  <div class="relative w-300px  bg-white/70 backdrop-blur-xs p-6 rounded-xl">
+    <h2 class="text-4xl font-bold mb-4">Bring Your Business to the World Wide Web</h2>
+    <p class="max-w-xl mx-auto text-lg mb-6">Professional, affordable, and scalable website development packages tailored to your business.</p>
+    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:bg-green-700 transition">Get Started</a>
+  </div>
+</section>
+
+  <!-- Our Services Section -->
+  <section id="services" class="max-w-7xl mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold text-center mb-12">Our Services</h3>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-bold mb-2">Starter Websites</h4>
+        <p>Perfect for portfolios and small businesses. Includes social media & WhatsApp integration.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-bold mb-2">Business Pro</h4>
+        <p>Custom animations, dynamic visuals, professional photography or video, and optional sales portals.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-bold mb-2">eCommerce & SaaS</h4>
+        <p>Advanced features for online stores and SaaS platforms, including dashboards, booking, and payment systems.</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center text-sm text-gray-500 py-4">
-    &copy; 2025 Creative Web Solutions. All rights reserved.
-  </footer>
+  <!-- Portfolio Section -->
+<section id="portfolio" class="bg-green-50 py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-12">Our Work</h3>
+    <div class="grid gap-6 md:grid-cols-3">
+      <a href="https://rohanharnal.com/" target="_blank" class="tilt-card">
+        <img src="project/project1.png" alt="Project 1" class="rounded-xl shadow" />
+      </a>
+      <a href="https://spiritanimal.in/" target="_blank" class="tilt-card">
+        <img src="project/project2.png" alt="Project 2" class="rounded-xl shadow" />
+      </a>
+      <a href="https://example.com/project3" target="_blank" class="tilt-card">
+        <img src="project/YOUR WEBSITE.png" alt="Project 3" class="rounded-xl shadow" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Tilt Effect Script and Style -->
+<style>
+  .tilt-card {
+    display: inline-block;
+    perspective: 1000px;
+  }
+  .tilt-card img {
+    transition: transform 0.3s ease;
+    transform: rotateX(4deg) rotateY(-4deg);
+  }
+</style>
+<script>
+  document.querySelectorAll('.tilt-card').forEach(card => {
+    const img = card.querySelector('img');
+
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const deltaX = (x - centerX) / centerX;
+      const deltaY = (y - centerY) / centerY;
+
+      img.style.transform = `rotateX(${deltaY * -10 + 4}deg) rotateY(${deltaX * 10 - 4}deg)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      img.style.transform = 'rotateX(4deg) rotateY(-4deg)';
+    });
+  });
+</script>
+
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="max-w-7xl mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold text-center mb-12">Pricing Packages</h3>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="border rounded-xl p-6 hover-expand bg-green-100">
+        <h4 class="text-xl font-bold mb-2">Starter</h4>
+        <p class="text-blue-600 text-2xl font-semibold mb-4">₹27,000</p>
+        <ul class="text-sm space-y-1">
+          <li>✓ Up to 5 pages</li>
+          <li>✓ WhatsApp & Social Media Integration</li>
+          <li>✓ Mobile Responsive</li>
+          <li class="hidden md:block">Ideal for personal portfolio or business introduction</li>
+        </ul>
+      </div>
+      <div class="border rounded-xl p-6 hover-expand bg-green-100">
+        <h4 class="text-xl font-bold mb-2">Business Pro</h4>
+        <p class="text-blue-600 text-2xl font-semibold mb-4">₹40,000+</p>
+        <ul class="text-sm space-y-1">
+          <li>✓ Up to 15 pages</li>
+          <li>✓ Advanced Design & Animations</li>
+          <li>✓ Optional Sales Portal</li>
+          <li class="hidden md:block">Includes custom photos or videos</li>
+        </ul>
+      </div>
+      <div class="border rounded-xl p-6 hover-expand bg-green-100">
+        <h4 class="text-xl font-bold mb-2">Enterprise</h4>
+        <p class="text-blue-600 text-2xl font-semibold mb-4">₹70,000+</p>
+        <ul class="text-sm space-y-1">
+          <li>✓ eCommerce & SaaS Ready</li>
+          <li>✓ CMS + Payment Integration</li>
+          <li>✓ Monthly Maintenance</li>
+          <li class="hidden md:block">Custom features like dashboards, user roles, and analytics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+    <section id="contact" class="bg-blue-600 text-white py-16">
+      <div class="max-w-2xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-bold mb-4">Let’s Build Something Great</h3>
+        <p class="mb-6">Ready to bring your business vision to life? Let's talk and start your journey.</p>
+        <a href="mailto:himanshupeyush@gmail.com" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">Contact Us</a>
+        <div class="mt-6">
+          <a href="https://wa.me/919599725768" target="_blank" class="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" class="w-6 h-6 mr-2"/>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-sm text-gray-500 py-4">
+      &copy; 2025 Creative Web Solutions. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- JS to swap pages -->
+  <script>
+    let showingWeb = true;
+    function swapPage() {
+      const webContent = document.getElementById("webContent");
+      const pmContent = document.getElementById("pmContent");
+      const body = document.getElementById("pageBody");
+
+      if (showingWeb) {
+        webContent.classList.remove("active");
+        pmContent.classList.add("active");
+        body.style.background = "#f4f4f4";
+      } else {
+        pmContent.classList.remove("active");
+        webContent.classList.add("active");
+        body.style.background = "#ffffff";
+      }
+      showingWeb = !showingWeb;
+    }
+  </script>
 </body>
 </html>
